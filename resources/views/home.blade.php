@@ -8,15 +8,7 @@
                 <div class="card-header">EgerChat Messenger</div>
 
                 <div class="card-body" id="app">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    Welcome to EgerChat Messenger
-
-                    <chat-app :user='{{ auth() -> user() }}'></chat-app>
+                  <chat-app :user='{{ auth() -> user() }}'></chat-app>
                 </div>
             </div>
         </div>

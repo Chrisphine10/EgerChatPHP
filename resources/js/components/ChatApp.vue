@@ -1,13 +1,13 @@
 <template>
  <div class="chat-app">
      <Conversation :contact="selectedContact" :messages="messages"/>
-    <Contactlist :contacts="contacts"/>
+     <ContactsList :contacts="contacts"/>
  </div>
 </template>
 
 <script>
     import Conversation from './Conversation';
-    import ContactList from './ContactsList';
+    import ContactsList from './ContactsList';
     export default {
         props: {
             user: {
@@ -16,10 +16,12 @@
             }
         },
 
-        date(){
-            selectedContact: null;
-            messages=[];
-            contacts=[];
+        date() {
+            return{
+                selectedContact: null,
+                messages=[],
+                contacts=[]
+            };
         },
         mounted() {
             console.log(this.user);
