@@ -1,0 +1,34 @@
+<template>
+ <div class="chat-app">
+     <Conversation :contact="selectedContact" :messages="messages"/>
+    <Contactlist :contacts="contacts"/>
+ </div>
+</template>
+
+<script>
+    import Conversation from './Conversation';
+    import ContactList from './ContactsList';
+    export default {
+        props: {
+            user: {
+                type: Object,
+                required: true
+            }
+        },
+
+        date(){
+            selectedContact: null;
+            messages=[];
+            contacts=[];
+        },
+        mounted() {
+            console.log(this.user);
+            axios.get('/contacts')
+            .then((response) => {
+                console.log(response.data);
+                this.contacts = response.data;
+            });
+        },
+        components: {Conversation, ContactsList}
+    }
+</script>
