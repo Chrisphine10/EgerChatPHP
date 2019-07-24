@@ -36,6 +36,6 @@ $factory->define(App\Message::class, function (Faker $faker) {
     return [
         'from' => $from,
         'to' => $to,
-        'text' => $faker->sentence,
+        'text' => $faker->sentence
     ];
 });

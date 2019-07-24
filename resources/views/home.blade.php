@@ -7,8 +7,8 @@
             <div class="card">
                 <div class="card-header">EgerChat Messenger</div>
 
-                <div class="card-body" id="app">
-                  <chat-app :user='{{ auth() -> user() }}'></chat-app>
+            <div class="card-body" id="app">
+                  <chat-app :user="{{auth()->user()}}"></chat-app>
                 </div>
             </div>
         </div>
