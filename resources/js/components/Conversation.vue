@@ -43,6 +43,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
     h1 {
         font-size: 20px;
         padding: 10px;

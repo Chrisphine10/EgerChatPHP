@@ -4,17 +4,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
-
+        <title>EgerChat</title>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
+                background-color: #3F3F3F;
+                color: #EBEBEB;
+                font-family: Arial, Helvetica, sans-serif;
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
@@ -49,7 +48,9 @@
             }
 
             .links > a {
-                color: #636b6f;
+              
+                color: #EBEBEB;
+                font-family: Arial, Helvetica, sans-serif;
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
@@ -61,6 +62,7 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            
         </style>
     </head>
     <body>
@@ -73,7 +75,7 @@
                         <a href="{{ route('login') }}">Login</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
+                            <a href="{{ route('register') }}">Sign Up</a>
                         @endif
                     @endauth
                 </div>
@@ -85,9 +87,9 @@
                 </div>
 
                 <div class="links">
-                    <a href="#">Docs</a>
-                    <a href="#" target="_blank">Terms and conditions</a>
-                    <a href="#">Blog</a>
+                    <a href="home">Home</a>
+                    <a href="/terms" target="_blank">Terms and conditions</a>
+                    <a href="/privacy" target="_blank">privacy policy</a>
                     <a href="https://github.com/Chrisphine10/EgerChatPHP" target="_blank">GitHub</a>
                 </div>
             </div>

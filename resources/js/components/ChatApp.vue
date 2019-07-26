@@ -72,5 +72,6 @@
 <style lang="scss" scoped>
 .chat-app {
     display: flex;
+    background-color: rgb(140, 144, 148);
 }
 </style>
